@@ -1,0 +1,79 @@
+\chapter{任务概述}
+拍吧是由中国科学技术大学Android开发小组开发，供摄影爱好者交流的社交平台产品。其旨在为摄影爱好者提供一个高效、友好的平台。本产品结合摄影的特点，通过现代化的设计技巧去尽可能提升摄影爱好者和他人交流摄影技巧的效率。本系统的初期目标包括客户端、服务器端两个部分。本系统后期希望能与其他系统进行交互，该部分工作暂时处理。
+
+\section{目标}
+实现拍吧系统，实现需求规格说明书中所描述的登录、注册、看文章、发文章、推荐文章等功能，并且保证系统的健壮性和数据安全。
+
+\section{开发与运行环境}
+
+\subsection{开发环境的配置}
+\begin{table}[htbp]
+\centering
+\caption{开发环境的配置} \label{tab:development-environment}
+\begin{tabular}{|c|c|c|}
+    \hline
+    类别 & 标准配置 & 最低配置 \\
+    \hline
+    计算机硬件 & \tabincell{c}{基于x86结构的CPU\\ 主频>=2.4GHz\\ 内存>=8G\\ 硬盘>=250G} & \tabincell{c}{基于x86结构的CPU\\ 主频>=1.6GHz\\ 内存>=2G\\ 硬盘>=40G} \\
+    \hline
+    计算机软件 & \tabincell{c}{Windows10操作系统\\Android Studio(version>=2.3.1.0)\\Python(version>=3.6)\\Android Emulator} & \tabincell{c}{Windows7操作系统\\Android Studio (version>=2.2.1.0)\\Python(version>=3.4)\\Android Emulator}\\ 
+    \hline
+    网络通信 & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} \\
+    \hline
+    其他 & 采用MariaDB数据库 & 采用MariaDB数据库 \\
+    \hline
+\end{tabular}
+% \note{这里是表的注释}
+\end{table}
+
+\subsection{测试环境的配置}
+\begin{table}[htbp]
+\centering
+\caption{测试环境的配置} \label{tab:test-environment}
+\begin{tabular}{|c|c|c|}
+       \hline
+    类别 & 标准配置 & 最低配置 \\
+    \hline
+    计算机硬件 & \tabincell{c}{基于x86结构的CPU\\ 主频>=2.4GHz\\ 内存>=8G\\ 硬盘>=250G} & \tabincell{c}{基于x86结构的CPU\\ 主频>=1.6GHz\\ 内存>=2G\\ 硬盘>=40G} \\
+    \hline
+    计算机软件 & \tabincell{c}{Windows10操作系统\\Android Studio(version>=2.3.1.0)\\Python(version>=3.6)\\Android Emulator} & \tabincell{c}{Windows7操作系统\\Android Studio (version>=2.2.1.0)\\Python(version>=3.4)\\Android Emulator}\\ 
+    \hline
+    网络通信 & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} \\
+    \hline
+    其他 & 采用MariaDB数据库 & 采用MariaDB数据库 \\
+    \hline
+\end{tabular}
+% \note{这里是表的注释}
+\end{table}
+
+\subsection{运行环境的配置}
+\begin{table}[htbp]
+\centering
+\caption{运行环境的配置} \label{tab:operation-environment}
+\begin{tabular}{|c|c|c|}
+    \hline
+    类别 & 标准配置 & 最低配置 \\
+    \hline
+    计算机硬件 & \tabincell{c}{基于ARM结构的CPU\\ 主频>=2.4GHz\\ 内存>=2G\\ 容量>=32G} & \tabincell{c}{基于ARM结构的CPU\\ 主频>=1.6GHz\\ 内存>=1G\\ 容量>=8G} \\
+    \hline
+    计算机软件 & \tabincell{c}{Android操作系统 (kernel version>=4.0) & \tabincell{c}{Android操作系统 (kernel version>=3.0)\\
+    \hline
+    网络通信 & \tabincell{c}{可使用Wifi或蜂窝网络} & \tabincell{c}{可使用Wifi或蜂窝网络} \\
+    \hline
+\end{tabular}
+% \note{这里是表的注释}
+\end{table}
+
+\section{需求概述}
+功能需求包括：
+a.性能需求：需要在10000名用户同时登录的情况下保持系统正常运行36小时以上
+b.服务器模块：需要根据客户端的请求在规定时间范围内给出回应且需要保证所存信息的安全性。
+c.客户端模块：为用户提供一个高效、友好的社交平台，具体功能包括用户注册、登录、搜索、信息查看、信息更新、好友回话、好友添加、好友删除、举报用户、推荐文章、热搜、发表文章、编辑文章、阅读文章、发表评论、删除评论、获取文章评论、点赞、取消点赞、举报文章、照片墙、管理员处理举报。
+
+\section{条件与限制}
+开发环境以及工具规定：
+a.服务器架构：Django
+b.服务器平台：腾讯云
+c.操作系统：Windows
+d.数据库：MariaDB
+e.软件平台：Android Studio 2.3.1.0

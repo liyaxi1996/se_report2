@@ -1,0 +1,18 @@
+\begin{abstract}
+本文档旨在明确拍吧社交平台的功能和性能需求，其中包含用标准的语言和表述方式整理的系统需求，规范的各模块接口。该文档由拍吧社交平台开发者和用户协同明确，并计划在开发过程中由前端和后端开发人员使用以加深对本系统的理解，提升开发效率。
+
+\keywords{拍吧\zhspace{} 社交平台\zhspace{} 系统需求\zhspace{} 接口}
+
+\begin{table}[htbp]
+\centering
+\caption{缩略词清单} \label{tab:simpletable}
+\begin{tabular}{|c|c|c|}
+    \hline
+    缩略语 & 英文全名 & 中文解释 \\
+    \hline
+    c & d & e\\
+    \hline
+\end{tabular}
+\end{table}
+
+\end{abstract}
